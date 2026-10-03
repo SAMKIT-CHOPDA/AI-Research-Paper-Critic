@@ -1,0 +1,45 @@
+# Environment configuration
+.env
+.env.*
+# ...but keep the public template, which must be committed.
+!.env.example
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Temporary / uploaded files
+uploaded_files/
+
+# Locally generated validation artifacts
+artifacts/
+
+# Visual assets extracted at runtime by the Vision Agent
+backend/vision_agent/_extracted_assets/
+
+# Logs
+*.log
+logs/
+
+# OS / editor metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

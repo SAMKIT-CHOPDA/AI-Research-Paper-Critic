@@ -1,0 +1,30 @@
+# AI Research Paper Critic - runtime and test dependencies.
+# Versions are the ones currently installed and validated in this project.
+# Install with:  pip install -r requirements.txt
+
+# --- Document parsing and layout analysis ---
+pymupdf==1.28.2
+docling==2.130.0
+
+# --- Image processing for the Vision Agent ---
+pillow==12.3.0
+
+# --- Numeric and tabular data (vector store, Streamlit tables) ---
+numpy==2.3.5
+pandas==3.0.6
+
+# --- Structured schemas and validation for every agent ---
+pydantic==2.13.5
+
+# --- Environment configuration ---
+python-dotenv==1.2.3
+
+# --- LLM / multimodal / embedding providers (used by the agents' clients) ---
+openai==3.19.2
+httpx==0.28.1
+
+# --- Frontend ---
+streamlit==1.64.0
+
+# --- Tests ---
+pytest==8.4.2

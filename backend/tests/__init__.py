@@ -1,0 +1,1 @@
+"""Offline tests for the thin orchestration layer (backend/pipeline.py)."""
