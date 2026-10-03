@@ -39,6 +39,11 @@ AI Research Paper Critic brings these pieces together. It:
 It is not a chat interface and it does not answer questions in the abstract. It
 produces a structured report about one specific paper.
 
+It is also not a substitute for peer review or for the judgement of a human
+researcher. It organises and explains the evidence that is present in a paper, and
+it reports where that evidence is thin; the reading and the assessment remain with
+the reader.
+
 ## Why This Project?
 
 The project explores how several AI capabilities can work together on a task that
@@ -336,7 +341,16 @@ and mocks its provider clients; no test requires an API key.
 
 ## Installation
 
-Windows-friendly commands:
+Clone the repository:
+
+```bat
+git clone https://github.com/SAMKIT-CHOPDA/AI-Research-Paper-Critic.git
+cd AI-Research-Paper-Critic
+```
+
+Repository: <https://github.com/SAMKIT-CHOPDA/AI-Research-Paper-Critic>
+
+Create a virtual environment and install the pinned dependencies:
 
 ```bat
 python -m venv .venv
@@ -344,13 +358,20 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Environment Configuration
+(On macOS/Linux the activation command is `source .venv/bin/activate`.)
 
-Copy the template and fill in your own credentials:
+Then create your local configuration file and add your own credentials:
 
 ```bat
 copy .env.example .env
 ```
+
+`.env` holds your credentials and is git-ignored — it is never part of the
+repository. `.env.example` is the committed template.
+
+## Environment Configuration
+
+Copy `.env.example` to `.env` (see Installation) and fill in your own credentials.
 
 At minimum, two credentials are required:
 
